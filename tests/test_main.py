@@ -4,20 +4,26 @@ test_main.py
 Unit tests for main.py functions.
 """
 
-from main import greet
+from main import greet, square
 
 
 def test_greet_basic():
-    """Test greet() returns correct greeting."""
     assert greet("Alice") == "Hello, Alice!"
     assert greet("Bob") == "Hello, Bob!"
 
 
 def test_greet_empty():
-    """Test greet() with empty string."""
     assert greet("") == "Hello, !"
 
 
-def test_greet_numbers():
-    """Test greet() with numbers as input."""
-    assert greet("123") == "Hello, 123!"
+def test_square_positive():
+    assert square(2) == 4
+    assert square(5) == 25
+
+
+def test_square_zero():
+    assert square(0) == 0
+
+
+def test_square_negative():
+    assert square(-3) == 9

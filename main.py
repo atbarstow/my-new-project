@@ -10,6 +10,11 @@ def greet(name):
     return f"Hello, {name}!"
 
 
+def square(number):
+    """Return the square of a number."""
+    return number * number
+
+
 def main():
     """Main function to run the program."""
     user_name = input("Enter your name: ")
