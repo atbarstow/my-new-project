@@ -1,14 +1,19 @@
 """
 main.py
 
-This is a starter Python file for the 'my-new-project' repository.
-It prints a simple message to demonstrate a working Python setup.
+This file contains basic functions for the 'my-new-project' repository.
 """
+
+
+def greet(name):
+    """Return a greeting string for the given name."""
+    return f"Hello, {name}!"
 
 
 def main():
     """Main function to run the program."""
-    print("Hello, world!")
+    user_name = input("Enter your name: ")
+    print(greet(user_name))
 
 
 if __name__ == "__main__":
